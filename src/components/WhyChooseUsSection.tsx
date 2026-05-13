@@ -67,7 +67,7 @@ export function WhyChooseUsSection() {
             Why Choose Us
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-10 tracking-tight">
+          <h2 className="text-[37px] font-bold text-white mb-10 tracking-tight">
             Premium Results, Zero Compromise.
           </h2>
 

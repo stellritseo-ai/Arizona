@@ -29,7 +29,7 @@ function ContactPage() {
   return (
     <main className="bg-[#F8FAFC] overflow-x-hidden">
       {/* 1. Cinematic Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 pb-20 m-[15px] rounded-[10px]">
         <div className="absolute inset-0">
           <img 
             src="/quote-bg.jpg" 

@@ -74,7 +74,7 @@ export function FaqSection() {
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                  className="w-full p-[20px] flex items-center justify-between text-left focus:outline-none group"
+                  className="w-full p-[15px] flex items-center justify-between text-left focus:outline-none group"
                 >
                   <span className="text-[17px] md:text-lg font-bold text-[#0F172A] group-hover:text-[#C75A2A] transition-colors pr-8">
                     {faq.question}

@@ -24,7 +24,7 @@ function ConstructionPage() {
   return (
     <main className="bg-[#F8FAFC] overflow-x-hidden">
       {/* 1. Cinematic Hero Section */}
-      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden m-[15px] rounded-[10px]">
         {/* Cinematic Background */}
         <div className="absolute inset-0">
           <img 
