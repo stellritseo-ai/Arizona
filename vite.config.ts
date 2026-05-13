@@ -10,6 +10,9 @@ export default defineConfig({
       server: {
         preset: "vercel",
       },
+      prerender: {
+        routes: ["/"],
+      },
     }),
     viteReact(),
     tailwindcss(),
