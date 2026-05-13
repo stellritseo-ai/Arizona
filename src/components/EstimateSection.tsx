@@ -16,7 +16,7 @@ export function EstimateSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+        <h2 className="text-[40px] font-bold text-white mb-6 tracking-tight">
           Book Your Free On-Site Estimate Today
         </h2>
         
