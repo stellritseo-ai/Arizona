@@ -1,6 +1,5 @@
 import { ChevronsRight } from "lucide-react";
-import teamImg from "@/assets/welcome-team.jpg";
-import siteImg from "@/assets/welcome-site.jpg";
+import welcomeComposite from "@/assets/welcome-composite.png";
 
 export function WelcomeSection() {
   return (
@@ -54,44 +53,15 @@ export function WelcomeSection() {
           </div>
 
           {/* Images */}
-          <div className="relative w-full max-w-[560px] mx-auto aspect-square">
-            {/* Main team circle */}
-            <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl">
-              <img
-                src={teamImg}
-                alt="Arizona Premiere Construction team"
-                width={960}
-                height={1024}
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-            {/* Years of experience badge */}
-            <div
-              className="absolute -top-2 -right-2 sm:top-0 sm:right-0 h-32 w-32 sm:h-40 sm:w-40 rounded-full flex flex-col items-center justify-center text-white text-center shadow-xl border-4 border-[#FBF1E6]"
-              style={{ background: "var(--gradient-brand-diag)" }}
-            >
-              <div className="text-3xl sm:text-4xl font-bold leading-none">06+</div>
-              <div className="mt-1.5 text-xs sm:text-sm font-semibold leading-tight">
-                Years Of<br />Experience
-              </div>
-            </div>
-
-            {/* Site supervisor circle */}
-            <div className="absolute -bottom-2 -right-2 sm:bottom-2 sm:right-2 h-36 w-36 sm:h-48 sm:w-48 rounded-full overflow-hidden shadow-xl border-4 border-[#FBF1E6]">
-              <img
-                src={siteImg}
-                alt="Construction supervisor on site"
-                width={640}
-                height={640}
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
+          <div className="relative w-full max-w-[560px] mx-auto">
+            <img
+              src={welcomeComposite}
+              alt="Arizona Premiere Construction team and supervisor with 06+ years of experience"
+              loading="lazy"
+              className="w-full h-auto object-contain"
+            />
           </div>
         </div>
-      </div>
     </section>
   );
 }
