@@ -56,7 +56,7 @@ export function ProcessSection() {
           height={1280}
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#0b1626]/85" />
+        <div className="absolute inset-0 bg-[#0b1626]/40" />
       </div>
 
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 pt-16 lg:pt-20 pb-10 lg:pb-14">
