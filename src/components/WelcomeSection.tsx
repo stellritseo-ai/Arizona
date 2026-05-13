@@ -62,6 +62,7 @@ export function WelcomeSection() {
             />
           </div>
         </div>
+      </div>
     </section>
   );
 }
