@@ -4,11 +4,8 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
 
-import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FooterSection } from "@/components/FooterSection";
 
@@ -70,44 +67,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    title: "Arizona Premiere Construction Group LLC | General Contractor Chandler AZ – Residential & Commercial Construction, Remodeling & Roofing | ROC #328501",
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Licensed general contractor in Chandler, AZ serving Phoenix, Scottsdale, Mesa & Gilbert. Residential & commercial construction, kitchen & bath remodeling, roofing. ROC #328501. Free video quote. Call (602) 816 8177." },
-      { name: "author", content: "Arizona Premiere Construction Group LLC" },
-      { property: "og:title", content: "Arizona Premiere Construction Group LLC | General Contractor Chandler AZ" },
-      { property: "og:description", content: "Licensed general contractor in Chandler, AZ serving Phoenix, Scottsdale, Mesa & Gilbert. ROC #328501." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();

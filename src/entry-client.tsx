@@ -1,6 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { StartClient } from "@tanstack/react-start";
-import { createRouter } from "@tanstack/react-router";
+import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 import { QueryClient } from "@tanstack/react-query";
 
@@ -11,7 +10,7 @@ const router = createRouter({
 });
 
 const rootElement = document.getElementById("root");
-if (rootElement && !rootElement.innerHTML) {
+if (rootElement) {
   const root = createRoot(rootElement);
-  root.render(<StartClient router={router} />);
+  root.render(<RouterProvider router={router} />);
 }
